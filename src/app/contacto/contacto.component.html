@@ -1,0 +1,6 @@
+<section class="contacto">
+    <h2>{{datos?.name}}  |  {{datos?.login}}</h2>
+    <img [src]="datos?.avatar_url" alt='Imagen de creador de la pagina'>
+    <p><b>Correo: </b> {{datos?.email ? datos.email : 'No disponible'}}</p>
+    <p><b>Biografia: </b> {{datos?.bio}}</p>
+</section>

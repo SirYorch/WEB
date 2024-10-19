@@ -1,0 +1,16 @@
+<section class="contenedor" >
+
+    <section #curso  *ngFor="let materia of materias" class="curso">
+        <p class="borrar" (click)="remove(materia)">X</p>
+        <h2 class="titulo ">{{materia.nombre}}</h2>
+            <p class="contenido">{{materia.docente}}</p>
+            <p class="contenido">{{materia.fIni}}</p>
+            <p class="contenido">{{materia.duracion}}</p>
+            <p class="contenido">{{materia.desc}}</p>
+        <button class="boton" (click)="ver(materia)">Ver más</button>
+    </section>
+
+</section>
+<div class="hidden">
+    <app-form-agregar #formulario (dataEmitter)="receiveData($event)"></app-form-agregar>
+</div>

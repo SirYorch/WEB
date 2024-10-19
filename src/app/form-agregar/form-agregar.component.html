@@ -1,0 +1,15 @@
+<section class=" formulario"> 
+    <div class="form">
+        <label class="nombre">Nombre del curso</label>
+        <input  id="nombre" type="text" [(ngModel)]="valNombre">
+        <label class="docente">Nombre del docente</label>
+        <input id="docente" type="text" [(ngModel)]="valDocente">
+        <label class="fecha">Fecha de inicio</label>
+        <input id="fecha" type="date" class="fecha" [(ngModel)]="valIni" >
+        <label class="duracion">Duración del curso  (horas) </label>
+        <input id="duracion" type="number" [(ngModel)]="valDur">
+        <label class="descripcion" >Descripción </label>
+        <textarea id="descripcion" type="text" [(ngModel)]="valdesc" ></textarea>
+        <button id="agregar-curso" type="button" (click)="guardar()">Agregar Curso</button>
+    </div>
+</section>
