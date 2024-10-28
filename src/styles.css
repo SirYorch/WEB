@@ -353,3 +353,94 @@ a{
     width: 100%;
     height:100%;
 }
+
+
+
+
+
+
+///////////////////////////////////////////////
+
+
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(---whiteb);
+}
+:root{
+    ---whiteb:   #FFFFFF;
+    ---purplel:  #9F9FED;
+    ---purpleb:#736CED;
+    ---blackb:#040303;
+}
+
+nav{
+    padding: 15px;
+    background-color:var(---purplel);
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+}
+.tit{
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+ul{
+    width: 60%;
+    display: flex;
+}
+
+h1,h2,h3{
+    font-size: 25px;
+    color: var(---purpleb);
+}
+
+input{
+    border: none;
+    background-color: #9F9FED;
+    border-radius: 10px;
+    width:200px;
+    height:27px;
+
+}
+button{
+    border:none;
+    border-radius: 10px;
+    width:90px;
+    height:27px;
+    background-color: var(---purplel);
+}
+button:active{
+    background-color: var(---purpleb);
+}
+p{
+    color:var(---purplel)
+}
+a:hover{
+    text-decoration: none;
+    font-size: 30px;;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size .1s;
+}
